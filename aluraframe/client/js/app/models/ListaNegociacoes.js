@@ -9,9 +9,8 @@ class ListaNegociacoes{
     }
 
     get negociacoes(){
-
-        return this._negociacoes;
-
+        //criando uma cópia do array, array defensivo
+        return [].concat(this._negociacoes);
     }
 
 }
